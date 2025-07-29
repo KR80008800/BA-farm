@@ -185,7 +185,7 @@ if st.button("계산 시작"):
         prob2 = pulp.LpProblem("Maximize_priority", pulp.LpMaximize)
         n_vars2 = [pulp.LpVariable(f"n{i+1}", lowBound=0, cat='Integer') for i in range(10)]
         prob2 += pulp.lpSum(
-            n_vars2[i] * sum(label_numeric[priority_weights[item_names[j]]] * V[i, j] for j in range(9))
+            n_vars2[i] * sum(label_numeric[priority_weights[item_labels[j]]] * V[i, j] for j in range(9))
             for i in range(10)
         )
 
