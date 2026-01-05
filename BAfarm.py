@@ -19,7 +19,7 @@ tier = st.selectbox("장비 티어:", list(range(1, 11)))
 # Target Input
 target = []
 item_labels = ['모자', '장갑', '신발', '가방', '배지', '헤어핀', '부적', '시계', '목걸이']
-st.write("## 목표 아이템 수 입력")
+st.write("## 캐려는 장비 개수 입력")
 cols = st.columns(9)
 for i, col in enumerate(cols):
     val = col.number_input(f"{item_labels[i]}", min_value=0, value=0)
@@ -247,4 +247,5 @@ hide_elements = """
 """
 
 st.markdown(hide_elements, unsafe_allow_html=True)
+
 
