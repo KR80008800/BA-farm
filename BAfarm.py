@@ -151,7 +151,7 @@ V_dic={1: V_type1, 2: V_type2, 3: V_type3, 4: V_type4, 5: V_type5, 6: V_type6, 7
 
 label_numeric = {'하': 0, '중': 1, '상': 2}
 priority_weights = {}
-priority_weights_initVal = {'모자': '상', '장갑': '상', '신발': '중', '가방': '중', '배지': '중', '헤어핀': '상', '부적': '하', '시계': '상', '목걸이': '중'}
+priority_weights_initVal = {'모자': '상', '장갑': '중', '신발': '상', '가방': '중', '배지': '중', '헤어핀': '상', '부적': '하', '시계': '상', '목걸이': '중'}
 
 st.markdown("## 우선순위 설정")
 
