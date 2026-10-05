@@ -4,6 +4,9 @@ import pulp
 import pandas as pd
 
 st.title("노말 파밍 최적화 계산기")
+st.write("PuLP version:", pulp.__version__)
+st.write("PuLP path:", pulp.__file__)
+st.write("LpVariable:", pulp.LpVariable)
 
 # Event Ratio Selector
 event_ratio = st.radio(
